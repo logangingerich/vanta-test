@@ -1,0 +1,20 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    logan-vanta-OAS:
+        inputs:
+            - location: https://raw.githubusercontent.com/logangingerich/test/refs/heads/main/api-spec.yaml
+              authHeader: Authorization
+              authSecret: $openapi_doc_auth_token
+        registry:
+            location: registry.speakeasyapi.dev/vanta/vanta/logan-vanta-oas
+targets:
+    logan-vanta:
+        target: typescript
+        source: logan-vanta-OAS
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/vanta/vanta/logan-vanta-oas-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false
