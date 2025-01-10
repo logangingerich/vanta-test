@@ -7,14 +7,14 @@ sources:
               authHeader: Authorization
               authSecret: $openapi_doc_auth_token
         registry:
-            location: registry.speakeasyapi.dev/vanta/vanta/logan-vanta-oas
+            location: registry.speakeasyapi.dev/loganinc/loganinc/vanta-test-oas
 targets:
     logan-vanta:
         target: typescript
         source: logan-vanta-OAS
         codeSamples:
             registry:
-                location: registry.speakeasyapi.dev/vanta/vanta/logan-vanta-oas-typescript-code-samples
+                location: registry.speakeasyapi.dev/loganinc/loganinc/vanta-test-oas-typescript-code-samples
             labelOverride:
                 fixedValue: Typescript (SDK)
             blocking: false
